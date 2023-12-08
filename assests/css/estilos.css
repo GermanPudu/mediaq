@@ -7,6 +7,7 @@
     "number"
     "footer";
     grid-template-columns: 1fr;
+    background-color: rgb(156, 153, 153);
 
 }
 
@@ -30,12 +31,12 @@ header h5 {
     align-items: center;
     font-weight: 100;
     display: flex;
-    margin-left: 1.5em;
+    margin-left: 1em;
 }
 #bar {
     display: flex;
     align-items: center;
-    margin-left: 1.5em;
+    margin-left: 4em;
     
 }
 
@@ -89,7 +90,7 @@ nav p{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: white;
+    background-color: rgb(156, 153, 153);
     border-top: 2em;
 
 }
@@ -128,8 +129,9 @@ menu {
         "header nav"
         "menu main"
         "footer number";
-        grid-template-columns: 20% auto;
+        grid-template-columns: 20% 100%;
         gap: 0;
+        background-color: rgb(156, 153, 153);
     
     }
     menu {
@@ -144,6 +146,7 @@ menu {
         color: white;
         margin: 0%;
         padding: 1em;
+        gap: 2em;
         
 
        
@@ -153,10 +156,14 @@ menu {
         grid-template-columns: 1fr 1fr 1fr;
         gap: 3em;
         padding: 1em;
+        background-color: rgb(156, 153, 153);
     }
     
     .ocultos {
-        display: grid;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
   
     #bar{

@@ -32,6 +32,7 @@ header h5 {
     font-weight: 100;
     display: flex;
     margin-left: 1em;
+    text-align: center;
 }
 #bar {
     display: flex;
@@ -91,7 +92,7 @@ nav p{
     justify-content: center;
     flex-direction: column;
     background-color: rgb(156, 153, 153);
-    border-top: 2em;
+    border-top: 1em;
 
 }
 
@@ -105,6 +106,8 @@ footer {
     align-items: center;
     justify-content: center;
     padding: 1em;
+    text-align: center;
+
     
     
 }
@@ -129,7 +132,7 @@ menu {
         "header nav"
         "menu main"
         "footer number";
-        grid-template-columns: 20% 100%;
+        grid-template-columns: 12% auto;
         gap: 0;
         background-color: rgb(156, 153, 153);
     
@@ -142,11 +145,12 @@ menu {
         justify-content: start;
         font-weight: 80 bold;
         font-size: 1.2em;
-        background-color: black;
+        background-color: rgb(26, 24, 24);
         color: white;
         margin: 0%;
         padding: 1em;
         gap: 2em;
+        height: auto;
         
 
        

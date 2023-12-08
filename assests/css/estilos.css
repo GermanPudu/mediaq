@@ -1,0 +1,165 @@
+.grid-container{
+    display: grid;
+    grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    "number"
+    "footer";
+    grid-template-columns: 1fr;
+
+}
+
+header {
+    grid-area: header;
+    display: flex;
+    background-color: black;
+    height: 6em;
+    color: white;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    margin: 0%;
+    padding: 1em;
+}
+
+
+header h5 {
+    margin-right: 1.8em;
+    font-size: 1em;
+    align-items: center;
+    font-weight: 100;
+    display: flex;
+    margin-left: 1.5em;
+}
+#bar {
+    display: flex;
+    align-items: center;
+    margin-left: 1.5em;
+    
+}
+
+nav {
+    grid-area: nav;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(156, 153, 153);
+   
+}
+nav p{
+    color: rgb(65, 62, 62);
+}
+.orden{
+    display: flex;
+    align-items: center;
+    width: 95%;
+    margin-bottom: 1em;
+}
+
+.compra {
+    grid-area: main;
+    
+}
+.number{
+    grid-area: number;
+}
+
+.instruments{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    padding: 0.5em;
+    border: solid 0.5em black;
+    font-size: smaller;
+    
+}
+ .nombreprecio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.number{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    border-top: 2em;
+
+}
+
+footer {
+    grid-area: footer;
+    display: flex;
+    background-color: black;
+    height: auto;
+    color: white;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+    
+    
+}
+.icons{
+    margin-top: 1em;
+}
+
+menu {
+    display: none;
+    grid-area: menu;
+   
+}
+
+.ocultos {
+    display: none;
+}
+
+@media (min-width: 576px) {
+    .grid-container{
+        display: grid;
+        grid-template-areas:
+        "header nav"
+        "menu main"
+        "footer number";
+        grid-template-columns: 20% auto;
+        gap: 0;
+    
+    }
+    menu {
+        grid-area: menu;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        font-weight: 80 bold;
+        font-size: 1.2em;
+        background-color: black;
+        color: white;
+        margin: 0%;
+        padding: 1em;
+        
+
+       
+    }
+    .compra {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 3em;
+        padding: 1em;
+    }
+    
+    .ocultos {
+        display: grid;
+    }
+  
+    #bar{
+        display: none;
+    }
+}

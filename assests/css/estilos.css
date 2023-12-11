@@ -48,6 +48,7 @@ nav {
     justify-content: center;
     flex-direction: column;
     background-color: rgb(156, 153, 153);
+    
    
 }
 nav p{
@@ -130,6 +131,75 @@ menu {
     .grid-container{
         display: grid;
         grid-template-areas:
+        "header menu"
+        "nav main"
+        "nav number"
+        "footer footer";
+        grid-template-columns: 20% auto;
+        gap: 0;
+        background-color: rgb(156, 153, 153);
+    
+    }
+    menu {
+        grid-area: menu;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: end;
+        font-weight: 80 bold;
+        font-size: 1.2em;
+        background-color: rgb(26, 24, 24);
+        color: white;
+        margin: 0%;
+        padding: 1em;
+        gap: 2em;
+        height: auto;    
+    }
+    .compra {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3em;
+        padding: 1em;
+        background-color: rgb(156, 153, 153);
+    }
+
+    #ocultostablet {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .compra img {
+        width: 200px;
+        height: 200px;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        flex-direction: column;
+        background-color: rgb(156, 153, 153);
+        padding: 1.5em;
+       
+    }
+    nav p{
+        color: rgb(65, 62, 62);
+    }
+    .orden{
+        display: flex;
+        align-items: center;
+        width: 95%;
+        margin-bottom: 1em;
+    }
+
+}
+
+@media (min-width: 992px) {
+    .grid-container{
+        display: grid;
+        grid-template-areas:
         "header nav"
         "menu main"
         "footer number";
@@ -150,11 +220,8 @@ menu {
         color: white;
         margin: 0%;
         padding: 1em;
-        gap: 2em;
-        height: auto;
         
-
-       
+        height: 100%;    
     }
     .compra {
         display: grid;
@@ -162,6 +229,7 @@ menu {
         gap: 3em;
         padding: 1em;
         background-color: rgb(156, 153, 153);
+        margin: 3em;
     }
     
     .ocultos {
@@ -174,4 +242,24 @@ menu {
     #bar{
         display: none;
     }
+    nav {
+        height: 6em;
+       
+    }
+    nav p{
+        color: rgb(65, 62, 62);
+    }
+    .orden{
+        display: flex;
+        align-items: center;
+        width: 95%;
+        margin-bottom: 3em;
+    }
 }
+
+
+
+
+
+
+
